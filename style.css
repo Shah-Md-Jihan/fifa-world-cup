@@ -1,7 +1,143 @@
 /* google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+/* header style start */
+.header {
+    margin-top: 50px;
+}
+
+.banner {
+    width: 1170px;
+    background-color: #161616;
+    height: 566px;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+
+.banner-content {
+    padding-left: 60px;
+
+}
+
+.banner-content h1 {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    padding-bottom: 20px;
+}
+
+.banner-content p {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+
+.banner-content img {
+    width: 90%;
+    margin-top: 69px;
+}
+
+.banner-content a {
+    background: #DD0000;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.banner-content a .fa-angle-right {
+    margin-left: 10px;
+}
+
+/* mobie device */
+@media only screen and (max-width: 576px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner-content {
+        padding: 14px 28px;
+        padding-bottom: 0px;
+    }
+
+    .banner-content img {
+        width: 100%;
+    }
+
+    .banner-content h1 {
+        text-align: center;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+}
+
+/* medium device */
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .banner-content {
+        padding: 14px 28px;
+        padding-bottom: 0px;
+    }
+
+    .banner-content h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .banner-content p {
+        font-size: 14px;
+    }
+}
+
+/* large device */
+@media only screen and (min-width: 993px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
 
 }
