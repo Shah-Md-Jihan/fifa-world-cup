@@ -340,8 +340,11 @@ body {
 
     .navigagion {
         background-color: transparent;
-        margin-bottom: 50px;
     }
+
+    /* .navigagion nav ul li {
+        float: left;
+    } */
 
     .blogs {
         grid-template-columns: repeat(2, 1fr);
